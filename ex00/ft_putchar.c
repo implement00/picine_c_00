@@ -1,15 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ykarpins <ynoty2@yahoo.com>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/05 00:53:58 by ykarpins          #+#    #+#             */
+/*   Updated: 2025/06/05 01:02:55 by ykarpins         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>  // standard input-output
 #include <unistd.h> // unix standard
 
-void ft_putchar(char characther) {
-    printf("\n");
-    write(1, &characther, 1);    // I write the index of the characther seen as array from 1 to 1
+void	ft_putchar(char characther)
+	{
+	printf("\n");
+	write(1, &characther, 1);
 }
 
-int main(void) {
+int	main(void)
+	{
+	char	a;
 
-    // define char 
-    char a = 'A';
-    // call func
-    ft_putchar(a);
+	a = 'A';
+	ft_putchar(a);
 }

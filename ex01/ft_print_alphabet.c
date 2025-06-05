@@ -1,30 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ykarpins <ynoty2@yahoo.com>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/05 01:02:58 by ykarpins          #+#    #+#             */
+/*   Updated: 2025/06/05 01:49:41 by ykarpins         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_print_alphabet(void) {
+/*
+The best way to achieve this is using keycodes, native to C 
+https://media.geeksforgeeks.org/wp-content/uploads/20240304094301/ASCII-Table.png
+The value of a int directly converts to a keycode char, and vise-versa.
+*/
 
-    /*
-    The best way to achieve this is using keycodes, native to C 
-    https://media.geeksforgeeks.org/wp-content/uploads/20240304094301/ASCII-Table.png
-    */ 
+void	ft_print_alphabet(void)
+	{
+	char	aplha;
 
-    int aplha = 'a'; // corresponds to keycode 97 aka int 97 | **Note:** variable needs to be type int for this to work.
-
-    for (int i = 0; i < 26; i++) {
-        printf("I currently represents:  %d \n", i);
-        printf("Alphabet keycode currently represents: %c \n", (aplha + i));
-    }
-
-    printf("Complete alphabet: \n \n \n");
-    for (int i = 0; i < 26; i++) {
-        printf("%c", (aplha + i)); 
-    }
-
+	aplha = 'a';
+	printf("Complete alphabet: \n \n \n");
+	while (aplha < '{')
+	{
+		write(1, &aplha, 1);
+		aplha = (aplha + 1);
+	}
 }
 
-int main(void) {
-
-    // call func
-    ft_print_alphabet(); 
-
+int	main(void)
+	{
+	ft_print_alphabet();
 }
