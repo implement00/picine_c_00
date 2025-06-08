@@ -8,6 +8,8 @@ _This documents covers what I have learned from doing these exersizes. This is f
 ## Table Of Content
 
 
+<br>
+
 ## Layout Explenations: 
 
 + **Project Name:** | _e.g; picine_c_00_
@@ -20,6 +22,8 @@ _This documents covers what I have learned from doing these exersizes. This is f
 
 ! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
 
+<br>
+<br>
 
 ## ft_putchar
 
