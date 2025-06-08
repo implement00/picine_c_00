@@ -98,6 +98,53 @@ int main(void) {
 <br>
 <br>
 
+## ft_print_reverse_alphabet
+
+This assignment is almost identical to the one above, just reverse the while loop from untill reaching bigger integer equal to `z`. I now make sure to continue while loop untill reaching smaller integer equal to `a`. Instead of using variable++ I utilised variable-- within my while loop. **So still learned the same things as last assignment**.
+
+<br>
+<br>
+
+## ft_print_numbers
+
+- **Assignment Name:** _ex03_
+
+/ **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing), with parameter arguments passed of type `void` (indicate it expects no arguments passed to func). The function should display the number 0-9 on a single line._
+
+{ **My Solution:** _Working with the ascii-table I defined a variable of `data type char`, and assigned it a value of **`char` `0`**. I understand this might seem confusing, but it's totally allowed. Because the integer `0` can also be represented as character `"0"`. And character `"0"` is defined on the ascii-table, which tells me when I incremnt the char with `x++` it will give me the next following character on the ascii table. I simply continue incremnting the `type char` untill I have reached a `type char` defined on the ascii-table after `"9"` (**character 9**), then I stop looping._
+
+! **Purpose of the assigment:** | _I learned that within `c` the `data type char` characters defined, can also hold the value of a integer represnted as `data type char`. This is evedent by the integers 0-9 being displayed on the ascii-table as `data type char`. Meaning it tough my I can increment once more a `data type char` with +1 to gain the second representation of the data type `char` on the ascii-table. As long as the data type passed to the `write()` func is data type `char` it's allowed._
+
+<br>
+
+```c
+// Note how I defined char data type, and assinged '0' char to it. 
+char		x;
+
+x = '0';
+write(1, "\n", 1);
+while (x != ':')
+{
+    write(1, &x, 1);
+    x++;
+}
+```
+
+<br>
+
+### What I learned: 
+**Note:** Both data type of `int` && `char` have a direct correlation between them via the ascii-table. You can view this by simply choosing what data type to print the variable as.
+**Note:** The data type `char` 0-9 live on the ascii table, making them accessible to the `write()` func which only take data type `char`.
+**Note:** You can increment a data type of `char` with a data type of `int`. 
+**Note:** All characthers printed out to the terminal will be on the same line, except if I specify a newline utilising; `"/n"`.
+**Note:** I can incremnt a defined varaible within a while loop using; `var++`. 
+**Note:** I can subtraact a defined varaible within a while loop using; `var--`. 
+
+
+<br>
+<br>
+
+## ft_is_negative
 
 
 
