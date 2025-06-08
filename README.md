@@ -68,9 +68,7 @@ write(1, &a, 1);
 
 ## ft_print_alphabet
 
-
-
-- **Assignment Name:** _ex00_
+- **Assignment Name:** _ex01_
 
 / **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing). The function should display the complete alphabet from a-z on a single line._
 
@@ -83,7 +81,7 @@ write(1, &a, 1);
 
 int main(void) {
     for(int i = 0; i < 200; i++) {
-        printf("The decimal ascii: %d \n The char ascii:", i, i);
+        printf("The decimal ascii: %d \n The char ascii: %c \n", i, i);
     }
     return 0;
 }
@@ -92,16 +90,13 @@ int main(void) {
 <br>
 
 ### What I learned: 
-**Note:** When passing a `variable type char` to the `write()` func I always need to place `&` before it.
-**Note:** passing type data of `int` to the function does NOT work. I can however pass type `char` which converts to a number on the ascii-table. 
-**Note:** I can NOT pass two char within a single `char variable type` to the `write()` func, a `char` is always a single character. I can pass a `string` which is array of characthers.
-**Note:** A single `char` is always within single quotes: `''`. 
-**Note:** A array of `char` is always within double quotes: `""`.
+**Note:** Both data type of `int` && `char` have a direct correlation between them via the ascii-table. You can view this by simply choosing what data type to print the variable as.
+**Note:** You can increment a data type of `char` with a data type of `int`. 
+**Note:** All characthers printed out to the terminal will be on the same line, except if I specify a newline utilising; `"/n"`.
+**Note:** I can incremnt a defined varaible within a while loop using; `var++`. 
 
-_It's also possible to pass a array of characters stored in a variable to the write func, but that is not in scope for now._
-
-
-
+<br>
+<br>
 
 
 
