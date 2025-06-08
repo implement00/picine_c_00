@@ -5,8 +5,11 @@ _This documents covers what I have learned from doing these exersizes. This is f
 ## Layout Explenations: 
 
 + **Project Name:** | _e.g; picine_c_00_
+
 - **Assignment Name:** | _e.g; ex00_
+
 { **My Solution:** | _Describing what my solution to gain the desired output was_
+
 ! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
 
 ## Table Of Content
