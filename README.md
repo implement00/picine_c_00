@@ -25,8 +25,11 @@ _This documents covers what I have learned from doing these exersizes. This is f
 / **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing). The function should display a single character, e.g; 'a' passed as a parameter within function arguments. The 'a' character passed is of variable type `char`. I must utilise the `write` function which is part of the `#include <unistd.h>` library_
 
 { **My Solution:** _Passing a single char defined within a variable called `characther` to the function, and then printing it to console using the following syntax bellow. This assignment had no logic, just correct syntax_
+```c
+write(1, &characther, 1);
+```
 
-! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
+! **Purpose of the assigment:** | _I learned that the write() function in `c` can display output to the terminal by specifying `write(1, &variable, 1);` where the first occurence of `1` specfies it's output, then the second `&variable` contains _
 
 
 ## Table Of Content
