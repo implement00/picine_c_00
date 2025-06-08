@@ -100,6 +100,8 @@ int main(void) {
 
 ## ft_print_reverse_alphabet
 
+- **Assignment Name:** _ex02_
+
 This assignment is almost identical to the one above, just reverse the while loop from untill reaching bigger integer equal to `z`. I now make sure to continue while loop untill reaching smaller integer equal to `a`. Instead of using variable++ I utilised variable-- within my while loop. **So still learned the same things as last assignment**.
 
 <br>
@@ -145,6 +147,42 @@ while (x != ':')
 <br>
 
 ## ft_is_negative
+
+- **Assignment Name:** _ex04_
+
+/ **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing), with parameter arguments passed of type `int`. The function should display 'N' if int passed is negative and 'P' if int passed is possitve. (p=possitive, n=negative)._
+
+{ **My Solution:** _The're once more isn't really a typical solution to this assignment as it just expects correct syntax no reall logic. Just utilise `if statments` to get result._
+
+! **Purpose of the assigment:** | _I learned that within `c` the `if statemnts` defined work exactly like any-other language. The syntax follows either the brack formatting from `node JS` or the indetnation formatting of `python3`. I additionally also learned that the `data type int **0**` stands for `false`, and the `data type int **1**` stand for `true`._
+
+<br>
+
+
+<br>
+
+```c
+// Note how I defined char data type, and assinged '0' char to it. 
+char		x;
+
+x = '0';
+write(1, "\n", 1);
+while (x != ':')
+{
+    write(1, &x, 1);
+    x++;
+}
+```
+
+<br>
+
+### What I learned: 
+**Note:** The `data type int **0**` stands for `false`, and the `data type int **1**` stand for `true`. 
+**Note:** The `if statemnts` defined work exactly like any-other language, you can follow `node JS` syntax. 
+
+<br>
+<br>
+
 
 
 
