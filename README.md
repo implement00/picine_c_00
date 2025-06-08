@@ -1,8 +1,32 @@
 # Picine C 00 | Learning C Basics
 
+_This documents covers what I have learned from doing these exersizes. This is for my personal gain and it's not part of the project specification to create such a `README.md` file. Altough the **evaluation process** part of every assignment does expect you to explain the code clearly, so it's in my benifit to do this._
 
+## Layout Explenations: 
+
++ **Project Name:** | _e.g; picine_c_00_
+- **Assignment Name:** | _e.g; ex00_
+{ **My Solution:** | _Describing what my solution to gain the desired output was_
+! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
 
 ## Table Of Content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
