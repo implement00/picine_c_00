@@ -2,15 +2,32 @@
 
 _This documents covers what I have learned from doing these exersizes. This is for my personal gain and it's not part of the project specification to create such a `README.md` file. Altough the **evaluation process** part of every assignment does expect you to explain the code clearly, so it's in my benifit to do this._
 
+## Source
++ **Subject PDF :** https://cdn.intra.42.fr/pdf/pdf/165162/en.subject.pdf
+
 ## Layout Explenations: 
 
 + **Project Name:** | _e.g; picine_c_00_
 
 - **Assignment Name:** | _e.g; ex00_
 
+/ **Goal of assignment:** | _Describing what the function needs to do_
+
 { **My Solution:** | _Describing what my solution to gain the desired output was_
 
 ! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
+
+
+## ft_putchar
+
+- **Assignment Name:** _ex00_
+
+/ **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing). The function should display a single character, e.g; 'a' passed as a parameter within function arguments. The 'a' character passed is of variable type `char`. I must utilise the `write` function which is part of the `#include <unistd.h>` library_
+
+{ **My Solution:** _Passing a single char defined within a variable called `characther` to the function, and then printing it to console using the following syntax bellow. This assignment had no logic, just correct syntax_
+
+! **Purpose of the assigment:** | _Descibing what I think the purpose of the assignment was, in terms of learning `c code`_
+
 
 ## Table Of Content
 
