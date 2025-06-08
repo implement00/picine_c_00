@@ -32,14 +32,12 @@ _This documents covers what I have learned from doing these exersizes. This is f
 / **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing). The function should display a single character, e.g; 'a' passed as a parameter within function arguments. The 'a' character passed is of variable type `char`. I must utilise the `write` function which is part of the `#include <unistd.h>` library_
 
 { **My Solution:** _Passing a single char defined within a variable called `characther` to the function, and then printing it to console using the following syntax bellow. This assignment had no logic, just correct syntax_
-```c
-write(1, &characther, 1);
-```
+
+! **Purpose of the assigment:** | _I learned that the write() function in `c` can display output to the terminal by specifying `write(1, &variable, 1);` where the first occurence of `1` specfies it's output, then the second `&variable` contains a variable type of char or a single directly passed char, 'a' or multiple char "aa". The final part of the `write()` func specifies how many char to print;_
+
 <br>
 
-
-! **Purpose of the assigment:** | _I learned that the write() function in `c` can display output to the terminal by specifying `write(1, &variable, 1);` where the first occurence of `1` specfies it's output, then the second `&variable` contains a variable type of char. The final part of the `write()` func specifies how many char to print;_
-
+### What I learned: 
 **Note:** When passing a `variable type char` to the `write()` func I always need to place `&` before it.
 **Note:** passing type data of `int` to the function does NOT work. I can however pass type `char` which converts to a number on the ascii-table. 
 **Note:** I can NOT pass two char within a single `char variable type` to the `write()` func, a `char` is always a single character. I can pass a `string` which is array of characthers.
@@ -65,10 +63,42 @@ write(1, "a", 1);
 write(1, &a, 1);
 ```
 
+<br>
+<br>
+
+## ft_print_alphabet
 
 
 
+- **Assignment Name:** _ex00_
 
+/ **Goal of assignment:** _Write a function of function-type `void` (indicate it's return value is nothing). The function should display the complete alphabet from a-z on a single line._
+
+{ **My Solution:** _Working with the ascii-table I defined a variable of `data type char`, then incremnted the `char` declared variable with `+1` within a `while` loop. This results in the keycode corresponding to the `type char` variable declared being incremented. So from `a-z` I increment the char with 1, if I where to `printf()` the letter `a` with data type `int` (%d) I would get `97`. So when I reach `z` char which is `int` `122` I stop._
+
+! **Purpose of the assigment:** | _I learned that within `c` the `data type char` characters defined, have a direct correspondation to a `data type int` number on the `ascii-table`. Meaning you can incremen charachers with integers, and also increment integers with cahracthers. Highly intresting, it's worth noting that you can print out the `ascii-table` like this:_
+```c
+#include <stdio.h>
+#include <unistd.h>
+
+int main(void) {
+    for(int i = 0; i < 200; i++) {
+        printf("The decimal ascii: %d \n The char ascii:", i, i);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### What I learned: 
+**Note:** When passing a `variable type char` to the `write()` func I always need to place `&` before it.
+**Note:** passing type data of `int` to the function does NOT work. I can however pass type `char` which converts to a number on the ascii-table. 
+**Note:** I can NOT pass two char within a single `char variable type` to the `write()` func, a `char` is always a single character. I can pass a `string` which is array of characthers.
+**Note:** A single `char` is always within single quotes: `''`. 
+**Note:** A array of `char` is always within double quotes: `""`.
+
+_It's also possible to pass a array of characters stored in a variable to the write func, but that is not in scope for now._
 
 
 
