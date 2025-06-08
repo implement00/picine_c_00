@@ -29,7 +29,31 @@ _This documents covers what I have learned from doing these exersizes. This is f
 write(1, &characther, 1);
 ```
 
-! **Purpose of the assigment:** | _I learned that the write() function in `c` can display output to the terminal by specifying `write(1, &variable, 1);` where the first occurence of `1` specfies it's output, then the second `&variable` contains _
+! **Purpose of the assigment:** | _I learned that the write() function in `c` can display output to the terminal by specifying `write(1, &variable, 1);` where the first occurence of `1` specfies it's output, then the second `&variable` contains a variable type of char. The final part of the `write()` func specifies how many char to print;_
+
+**Note:** passing type data of `int` to the function does NOT work. I can however pass type char which converts to a number on the ascii-table. 
+**Note:** I can NOT pass two char to the `write()` func, a `char` is always a single character. I can pass a `string` which is array of characthers:
+
+```c
+// Double char NOT allowed:
+char; c;
+c = 'aa';
+write(1, &c, 2);
+// String passed allowed: 
+write(1, "aa", 2);
+//String of char aka array:
+char array[] = "aa"
+write(1, &array, 2)
+
+```
+```c
+// Single char:
+write(1, "a", 1);
+// double char, which is a string:
+char; c;
+c = 'aa';
+write(1, &c, 2);
+```
 
 
 ## Table Of Content
